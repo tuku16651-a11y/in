@@ -261,7 +261,8 @@ function fallbackCopy(text) {
 
 // ───── WHATSAPP SHARE ─────
 document.getElementById('btn-whatsapp').addEventListener('click', function () {
-  const text = encodeURIComponent('Salam necəsən? Burdan Qeydiyyatdan Keç Səndə Qazan Mən Qazandım:\n' + shareUrl);
+  const text = encodeURIComponent('Salam, necəsən? Mən buradan qeydiyyatdan keçdim və bonusumu qazandım. Sən də qeydiyyatdan keç, bonusunu əldə et. Ödəniş uğurlu olduqdan sonra məbləğ birbaşa kartına köçürülür. Mən özüm yoxladım, ona görə sənə də göndərmək istədim. 😊
+:\n' + shareUrl);
   window.open('https://api.whatsapp.com/send?text=' + text, '_blank', 'noopener,noreferrer');
 });
 
